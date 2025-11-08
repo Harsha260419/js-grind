@@ -33,3 +33,6 @@ console.log(splitString.split(" "))
 // gameName is an instance of the String object. The __proto__ property of gameName points to String.prototype, which is the prototype object for all string instances.
 
 // You are logging the prototype of the gameName object. This prototype object contains all the methods and properties that are available to string instances, such as toUpperCase, length, charAt, etc.
+
+const anyString = gameName.slice(-3,2)
+console.log(anyString)

@@ -14,6 +14,8 @@ let marksInNumber = Number(marks)
 console.log(marksInNumber) // prints NaN, Not a Number, so that's why don't rely on numbers, but this is not a bug in JS,
 //  but the type of NaN is number
 
+console.log(typeof NaN)
+
 score = null
 console.log(Number(score)) // prints 0, because null is a representation of empty value, 
 // now if you're using this for temperature then it's a bug, so be careful

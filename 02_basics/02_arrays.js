@@ -5,6 +5,16 @@ const dc_heros = ["batman","superman","wonder woman","flash","aquaman"];
 
 console.log(marvel_heros);
 
+// A shallow copy of an array is a new array instance, but it only copies the references to nested objects or arrays, not the nested data itself. This means if the original array contains primitives (like numbers or strings), a shallow copy is completely independent.
+
+const originalArray = [1, "two", { name: "Alice" }];
+const dupArray = Array.from(originalArray);
+
+dupArray[2].name = "Bob";
+dupArray[0] = 99;
+console.log(originalArray); // name changes to bob but first element remained the same.
+
+
 
 // concat
 const allHeros = marvel_heros.concat(dc_heros)
@@ -23,7 +33,8 @@ console.log(flat_array);
 console.log(Array.isArray("Hitesh"))
 console.log(Array.from("Hitesh")) // it converts the string to an array of characters
 console.log(Array.from([1,2,3], x => x * 2)) // it converts the array to an array of elements after applying the function to each element
-console.log(Array.from({name: "harsha"})) // it converts the object to an array of elements, prints []
+const exp = Array.from({name: "harsha"}) // it converts the object to an array of elements, prints []
+console.log(exp);
 
 let score1 = 23
 let score2 = 34

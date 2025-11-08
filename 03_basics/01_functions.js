@@ -69,3 +69,5 @@ function returnSecondValue(myNewArray){
 
 let arr = [1,2,3,4,5,6,7,8,9,10];
 console.log(returnSecondValue(arr));
+let a = [1];
+console.log(returnSecondValue(a));
